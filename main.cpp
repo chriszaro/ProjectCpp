@@ -1,9 +1,10 @@
 #include <iostream>
-#include "bintree.h"
-#include "bintreeavl.h"
-#include "hashtable.h"
-#include "sarray.h"
-#include "usarray.h"
+//#include "bintree.h"
+//#include "bintreeavl.h"
+//#include "hashtable.h"
+//#include "sarray.h"
+//#include "usarray.h"
+#include "extra.h"
 
 #include <cstring>
 #include <fstream> //file stream, για να διαβάζεις αρχεία
@@ -11,6 +12,7 @@ using namespace std;
 
 int main()
 {
+	
   char *s;
   s=new char;
   ifstream File; //Το File είναι η μεταβλητή που έχει το αρχείο.
@@ -25,7 +27,8 @@ int main()
 
   while (File >> s) //Διαβάζεις από το αρχείο, λέξη λέξη
   {
-		
+		s=removeNonLatin(s);
+
     cout<<s<<endl;
   }
 
