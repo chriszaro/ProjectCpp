@@ -4,7 +4,8 @@
 class usarray
 {
   private:
-
+		char *word;
+		int times;
   public: //πρέπει να μπούνε τύποι
     ins();
     del();

@@ -12,7 +12,7 @@ using namespace std;
 
 int main()
 {
-
+	// usarray *w=new usarray;
   char *s;
   s=new char;
   ifstream File; //Το File είναι η μεταβλητή που έχει το αρχείο.
