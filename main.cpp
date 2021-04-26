@@ -34,10 +34,13 @@ int main()
 	
 		if (f==-1)
 			a.insert(s);
-
-    cout<<s<<endl;
   }
 
   File.close(); //Κλείνεις το αρχείο
+
+	for (int i=0; i<a.getC(); i++)
+	{
+		cout<<a.getB(i)<<endl<<a.getT(i)<<endl<<endl;
+	}
 }
   
