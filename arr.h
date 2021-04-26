@@ -10,6 +10,10 @@ class arr //κλάση αταξινόμητου
 	public:
 		arr();
 
+		char* getB(int i){return b[i].w;};
+		int getT(int i){return b[i].t;};
+		int getC(){return c;};
+		
 		void insert(char*s);
 		int find(char* s);
 		void del(char*s);
