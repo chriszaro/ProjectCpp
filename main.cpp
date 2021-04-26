@@ -30,11 +30,14 @@ int main()
   {
 		s=removeNonLatin(s);
 
-		int f = a.find(s);
+		if (strcmp(s,"\0"))
+		{
+			int f = a.find(s);
 	
-		if (f==-1)
-			a.insert(s);
-  }
+			if (f==-1)
+				a.insert(s);
+		}
+	}
 
   File.close(); //Κλείνεις το αρχείο
 
