@@ -1,4 +1,6 @@
-#include <string.h>
+#ifndef ex_h
+#define ex_h
+#include <cstring>
 char*removeNonLatin(char*s)
 {
   char *s2=nullptr;
@@ -22,4 +24,5 @@ char*removeNonLatin(char*s)
   s2[j] = '\0'; //κλείνουμε την λέξη
 
   return s2;
-}
+};
+#endif

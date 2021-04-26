@@ -1,20 +1,21 @@
 #include <iostream>
-#include "extra.h"
+#include "ex.h"
 #include <cstring> //Για μέγεθος συμβολοσειρών, σύγκριση κτλ
 #include <fstream> //file stream, για να διαβάζεις αρχεία
 using namespace std;
 
+#include "arr.h"
+
 //#include "bintree.h"
 //#include "bintreeavl.h"
-//#include "hashtable.h"
-//#include "sarray.h"
-//#include "usarray.h"
+//#include "hash.h"
+//#include "sarr.h"
 
 int main()
 {
-	// usarray *w=new usarray;
-  char *s;
-  s=new char;
+	arr a;
+  char *s=new char;
+
   ifstream File; //Το File είναι η μεταβλητή που έχει το αρχείο.
 
   File.open("test.txt"); //Ανοίγει το αρχείο
@@ -28,6 +29,11 @@ int main()
   while (File >> s) //Διαβάζεις από το αρχείο, λέξη λέξη
   {
 		s=removeNonLatin(s);
+
+		int f = a.find(s);
+	
+		if (f==-1)
+			a.insert(s);
 
     cout<<s<<endl;
   }
