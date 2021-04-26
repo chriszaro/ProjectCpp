@@ -1,6 +1,6 @@
 //Υλοποίηση 4) δυαδικό δένδρο αναζήτησης τύπου AVL
-#ifndef "bintreeavl_h"
-#define "bintreeavl_h"
+#ifndef bintreeavl_h
+#define bintreeavl_h
 
 class bintreeavl
 {

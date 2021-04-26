@@ -1,7 +1,7 @@
 //Υλοποίηση 5) πίνακας κατακερματισμού με ανοικτή διεύθυνση
-#ifndef "hashtable_h"
-#define "hashtable_h"
-class hashtable
+#ifndef hash_h
+#define hash_h
+class hash
 {
   private:
 
