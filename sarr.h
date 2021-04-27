@@ -1,13 +1,11 @@
 //Υλοποίηση 2) ταξινομημένος πίνακας
 #ifndef sarr_h
 #define sarr_h
-class sarr
+#include "arr.h"
+class sarr : public arr
 {
-  private:
-
-  public: //πρέπει να μπούνε τύποι
-    ins();
-    del();
-    find();
+  public:
+		void insert(char*s, int);
+		int find(char* s);
 };
 #endif

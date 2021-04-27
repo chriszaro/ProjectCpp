@@ -5,15 +5,17 @@
 using namespace std;
 
 #include "arr.h"
+#include "sarr.h"
 
 //#include "bintree.h"
 //#include "bintreeavl.h"
 //#include "hash.h"
-//#include "sarr.h"
+
 
 int main()
 {
 	arr a;
+	sarr b;
   char *s=new char;
 
   ifstream File; //Το File είναι η μεταβλητή που έχει το αρχείο.
@@ -32,18 +34,28 @@ int main()
 
 		if (strcmp(s,"\0"))
 		{
-			int f = a.find(s);
+			int fa = a.find(s);
+			int fb = b.find(s);
 	
-			if (f==-1)
+			if (fa==-1)
 				a.insert(s);
+				
+			b.insert(s,fb);
+
 		}
 	}
 
   File.close(); //Κλείνεις το αρχείο
 
-	for (int i=0; i<a.getC(); i++)
-	{
-		cout<<a.getB(i)<<endl<<a.getT(i)<<endl<<endl;
-	}
+	ofstream ofs;
+    ofs.open("ob.txt",ios::out);
+    if (ofs.is_open())
+    {
+        for (int i=0; i<b.getC(); i++)
+        {
+            ofs<<b.getB(i)<<endl<<b.getT(i)<<endl<<endl;
+        }
+    }
+	ofs.close();
 }
   
