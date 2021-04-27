@@ -4,6 +4,7 @@
 #include "ex2.h"
 class arr //κλάση αταξινόμητου
 {
+	protected:
 		int size;
 		word *b;
 		int c=0;
@@ -14,8 +15,8 @@ class arr //κλάση αταξινόμητου
 		int getT(int i){return b[i].t;};
 		int getC(){return c;};
 		
-		void insert(char*s);
-		int find(char* s);
+		virtual void insert(char*s);
+		virtual int find(char* s);
 		void del(char*s);
 };
 #endif
