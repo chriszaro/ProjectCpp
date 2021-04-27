@@ -7,3 +7,5 @@ struct word //λέξη και επαναλήψεις της
 	int t=0;
 };
 #endif
+
+

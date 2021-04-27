@@ -1,20 +1,27 @@
-/*//Υλοποίηση 2) ταξινομημένος πίνακας
+//Υλοποίηση 2) ταξινομημένος πίνακας
 #include "sarr.h"
-
-/*int sarr::binarySearch(word *b, char* s, int low, int high)
-{
-	if (high <= low)
-		return (strcmp(s,b[low].w)>0) ? (low + 1) : low;
-
-	int mid = (low + high) / 2;
-
-	if (strcmp(s,b[mid].w)==0)
-		return mid + 1;
-
-	if (strcmp(s,b[mid].w)>0)
-		return binarySearch(b, s, mid + 1, high);
-
-	return binarySearch(b, s, low,	mid - 1);
+void swap(word *b, int xp, int yp) 
+{ 
+    char* temp = new char;
+		int t;
+		strcpy(temp, b[xp].w);
+		t=b[xp].t;
+    strcpy(b[xp].w, b[yp].w);
+		b[xp].t=b[yp].t;
+		strcpy(b[yp].w, temp);
+    b[yp].t= t; 
+} 
+  
+// A function to implement bubble sort 
+void bubbleSort(word *b, int n) 
+{ 
+    int i, j; 
+    for (i = 0; i < n-1; i++)     
+      
+    // Last i elements are already in place 
+    for (j = 0; j < n-i-1; j++) 
+        if (strcmp(b[j].w,b[j+1].w)>0)
+            swap(b, j, j+1);
 }
 
 int sarr::find(char* s) //αναζήτηση, δέχεται μία συμβολοσειρά για όρισμα
@@ -39,8 +46,7 @@ int sarr::find(char* s) //αναζήτηση, δέχεται μία συμβολ
 			end=m-1;
 		}
 	}
-	
-	return binarySearch(b,s,0,c);
+	return 1;
 };
 
 void sarr::insert(char*s, int p) //εισαγωγή νέας λέξης
@@ -57,15 +63,8 @@ void sarr::insert(char*s, int p) //εισαγωγή νέας λέξης
 		b = temp; //αντιγράφουμε την διεύθυνση του νέου πίνακα στον δείκτη μας
 		size+=50; //αυξάνουμε το μέγεθος της size
 	}
-	
-	for (int i=c-1; i>=p; i--) //ξεκινάμε το i από αυτήν την θέση
-	{
-		strcpy(b[i+1].w,b[i].w); //αντιγράφουμε μία προς μία τις λέξεις στην προηγούμενη θέση στον πίνακα, ουσιαστικα δεν "διαγράφουμε", αλλά κάνουμε overwrite
-		b[i+1].t=b[i].t;
-	}
 	strcpy(b[p].w,s); //αντιγράφουμε συμβολοσειρά
 	b[p].t++; //αυξάνουμε επαναλήψεις
 	c++; //αυξάνουμε μετρητή
+	bubbleSort(b, c);
 }
-
-*/

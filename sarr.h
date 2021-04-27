@@ -7,5 +7,6 @@ class sarr : public arr
   public:
 		void insert(char*s, int);
 		int find(char* s);
+		int binarySearch(word *b, char* s, int low, int high);
 };
 #endif

@@ -36,11 +36,10 @@ int main()
 		{
 			int fa = a.find(s);
 			int fb = b.find(s);
-	
 			if (fa==-1)
 				a.insert(s);
-				
-			b.insert(s,fb);
+			if (fb!=-1)
+				b.insert(s,fb);
 
 		}
 	}
@@ -51,9 +50,9 @@ int main()
     ofs.open("ob.txt",ios::out);
     if (ofs.is_open())
     {
-        for (int i=0; i<b.getC(); i++)
+        for (int i=0; i<a.getC(); i++)
         {
-            ofs<<b.getB(i)<<endl<<b.getT(i)<<endl<<endl;
+            ofs<<a.getB(i)<<endl<<a.getT(i)<<endl<<endl;
         }
     }
 	ofs.close();
