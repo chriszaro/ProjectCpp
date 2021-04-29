@@ -43,6 +43,7 @@ int main()
 
 		}
 	}
+	b.fix();
 
   File.close(); //Κλείνεις το αρχείο
 
