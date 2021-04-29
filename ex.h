@@ -25,4 +25,5 @@ char*removeNonLatin(char*s)
 
   return s2;
 };
+
 #endif
