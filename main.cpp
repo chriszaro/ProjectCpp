@@ -46,15 +46,20 @@ int main()
 
   File.close(); //Κλείνεις το αρχείο
 
-	ofstream ofs;
-    ofs.open("ob.txt",ios::out);
-    if (ofs.is_open())
+	ofstream oa, ob;
+    oa.open("oa.txt",ios::out);
+		ob.open("ob.txt",ios::out);
+    if (oa.is_open() && ob.is_open())
     {
+				for (int i=0; i<a.getC(); i++)
+        {
+            oa<<a.getB(i)<<endl<<a.getT(i)<<endl<<endl;
+        }
         for (int i=0; i<b.getC(); i++)
         {
-            ofs<<b.getB(i)<<endl<<b.getT(i)<<endl<<endl;
+            ob<<b.getB(i)<<endl<<b.getT(i)<<endl<<endl;
         }
     }
-	ofs.close();
+	oa.close();
 }
   
