@@ -1,7 +1,7 @@
-/*//Υλοποίηση 2) ταξινομημένος πίνακας
+//Υλοποίηση 2) ταξινομημένος πίνακας
 #include "sarr.h"
 
-/*int sarr::binarySearch(word *b, char* s, int low, int high)
+int sarr::binarySearch(word *b, char* s, int low, int high)
 {
 	if (high <= low)
 		return (strcmp(s,b[low].w)>0) ? (low + 1) : low;
@@ -20,7 +20,7 @@
 int sarr::find(char* s) //αναζήτηση, δέχεται μία συμβολοσειρά για όρισμα
 {
 	int start=0; //αρχή του πίνακα που θα ψάξουμε
-	int end=c; //"τέλος" του πίνακα
+	int end=c-1; //"τέλος" του πίνακα
 	int m;
 	while (start<=end)
 	{
@@ -40,7 +40,7 @@ int sarr::find(char* s) //αναζήτηση, δέχεται μία συμβολ
 		}
 	}
 	
-	return binarySearch(b,s,0,c);
+	return binarySearch(b,s,0,c-1);
 };
 
 void sarr::insert(char*s, int p) //εισαγωγή νέας λέξης
@@ -67,5 +67,3 @@ void sarr::insert(char*s, int p) //εισαγωγή νέας λέξης
 	b[p].t++; //αυξάνουμε επαναλήψεις
 	c++; //αυξάνουμε μετρητή
 }
-
-*/
