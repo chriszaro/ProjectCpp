@@ -4,8 +4,8 @@
 #include <fstream> //file stream, για να διαβάζεις αρχεία
 using namespace std;
 
-#include "arr.h"
-#include "sarr.h"
+#include "arr.h" // δεν έχω δοκιμάσει αν δουλεύει το delete
+#include "sarr.h" //ούτε εδώ, επίσης το 0 μπαίνει στην 1η θέση
 
 //#include "bintree.h"
 //#include "bintreeavl.h"
@@ -50,9 +50,9 @@ int main()
     ofs.open("ob.txt",ios::out);
     if (ofs.is_open())
     {
-        for (int i=0; i<a.getC(); i++)
+        for (int i=0; i<b.getC(); i++)
         {
-            ofs<<a.getB(i)<<endl<<a.getT(i)<<endl<<endl;
+            ofs<<b.getB(i)<<endl<<b.getT(i)<<endl<<endl;
         }
     }
 	ofs.close();
