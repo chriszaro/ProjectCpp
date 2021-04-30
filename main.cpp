@@ -11,7 +11,6 @@ using namespace std;
 //#include "bintreeavl.h"
 //#include "hash.h"
 
-
 int main()
 {
 	arr a;
@@ -40,7 +39,6 @@ int main()
 				a.insert(s);
 			if (fb!=-1)
 				b.insert(s,fb);
-
 		}
 	}
 
@@ -51,15 +49,11 @@ int main()
 	ob.open("ob.txt",ios::out);
 	if (oa.is_open() && ob.is_open())
 	{
-			for (int i=0; i<a.getC(); i++)
-			{
-					oa<<a.getB(i)<<endl<<a.getT(i)<<endl<<endl;
-			}
-			for (int i=0; i<b.getC(); i++)
-			{
-					ob<<b.getB(i)<<endl<<b.getT(i)<<endl<<endl;
-			}
-	}
+		for (int i=0; i<a.getC(); i++)
+			oa<<a.getB(i)<<endl<<a.getT(i)<<endl<<endl;
+		for (int i=0; i<b.getC(); i++)
+			ob<<b.getB(i)<<endl<<b.getT(i)<<endl<<endl;
+}
 	oa.close();
 	ob.close();
 }
