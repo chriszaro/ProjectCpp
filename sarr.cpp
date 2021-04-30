@@ -19,6 +19,8 @@ int sarr::binarySearch(word *b, char* s, int low, int high)
 
 int sarr::find(char* s) //αναζήτηση, δέχεται μία συμβολοσειρά για όρισμα
 {
+	if (c==0)
+		return 0;
 	int start=0; //αρχή του πίνακα που θα ψάξουμε
 	int end=c-1; //"τέλος" του πίνακα
 	int m;
