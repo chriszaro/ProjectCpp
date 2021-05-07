@@ -5,7 +5,7 @@
 using namespace std;
 
 #include "arr.h" // δεν έχω δοκιμάσει αν δουλεύει το delete
-#include "sarr.h" //ούτε εδώ, επίσης το 0 μπαίνει στην 1η θέση
+#include "sarr.h" //ούτε εδώ
 
 //#include "bintree.h"
 //#include "bintreeavl.h"
@@ -24,37 +24,38 @@ int main()
   if (!File) //Ελέγχεις ότι υπάρχει το αρχείο και κατάφερε να το ανοίξει
   {
     cerr << "Unable to open file";
-    exit(1);   //Τερματίζει το πρόγραμμα
   }
-
-  while (File >> s) //Διαβάζεις από το αρχείο, λέξη λέξη
-  {
-		s=removeNonLatin(s);
-
-		if (strcmp(s,"\0"))
-		{
-			int fa = a.find(s);
-			int fb = b.find(s);
-			if (fa==-1)
-				a.insert(s);
-			if (fb!=-1)
-				b.insert(s,fb);
-		}
-	}
-
-  File.close(); //Κλείνεις το αρχείο
-
-	ofstream oa, ob;
-	oa.open("oa.txt",ios::out);
-	ob.open("ob.txt",ios::out);
-	if (oa.is_open() && ob.is_open())
+	else
 	{
-		for (int i=0; i<a.getC(); i++)
-			oa<<a.getB(i)<<endl<<a.getT(i)<<endl<<endl;
-		for (int i=0; i<b.getC(); i++)
-			ob<<b.getB(i)<<endl<<b.getT(i)<<endl<<endl;
-}
-	oa.close();
-	ob.close();
+		while (File >> s) //Διαβάζεις από το αρχείο, λέξη λέξη
+		{
+			s=removeNonLatin(s); //την καθαρίζεις από σκουπίδια
+
+			if (strcmp(s,"\0")) //αποκλείεις συμβολοσειρές αριθμών και συμβόλων
+			{
+				int fa = a.find(s); //αναζήτηση σε αταξηνόμητο
+				int fb = b.find(s); //αναζήτηση σε ταξηνομηνένο
+				if (fa==-1)
+					a.insert(s);
+				if (fb!=-1)
+					b.insert(s,fb);
+			}
+		}
+
+		File.close(); //Κλείνεις το αρχείο
+
+		ofstream oa, ob;
+		oa.open("oa.txt");
+		ob.open("ob.txt");
+		if (oa.is_open() && ob.is_open())
+		{
+			for (int i=0; i<a.getC(); i++)
+				oa<<a.getB(i)<<endl<<a.getT(i)<<endl<<endl;
+			for (int i=0; i<b.getC(); i++)
+				ob<<b.getB(i)<<endl<<b.getT(i)<<endl<<endl;
+		}
+		oa.close();
+		ob.close();
+	}
 }
   
