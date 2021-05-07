@@ -1,1 +1,486 @@
-a unit of language, consisting of one or more spoken sounds or their written representation, that functions as a principal carrier of meaning. Words are composed of one or more morphemes and are either the smallest units susceptible of independent use or consist of two or three such units combined under certain linking conditions, as with the loss of primary accent that distinguishes the one-word blackbird (primary stress on “black”, and secondary stress on “bird”) from black bird (primary stress on both words).
+The Project Gutenberg EBook of The Notebooks of Leonardo Da Vinci, Complete
+by Leonardo Da Vinci
+(#3 in our series by Leonardo Da Vinci)
+
+Copyright laws are changing all over the world. Be sure to check the
+copyright laws for your country before downloading or redistributing
+this or any other Project Gutenberg eBook.
+
+This header should be the first thing seen when viewing this Project
+Gutenberg file.  Please do not remove it.  Do not change or edit the
+header without written permission.
+
+Please read the "legal small print," and other information about the
+eBook and Project Gutenberg at the bottom of this file.  Included is
+important information about your specific rights and restrictions in
+how the file may be used.  You can also find out about how to make a
+donation to Project Gutenberg, and how to get involved.
+
+
+**Welcome To The World of Free Plain Vanilla Electronic Texts**
+
+**eBooks Readable By Both Humans and By Computers, Since 1971**
+
+*****These eBooks Were Prepared By Thousands of Volunteers!*****
+
+
+Title: The Notebooks of Leonardo Da Vinci, Complete
+
+Author: Leonardo Da Vinci
+
+Release Date: Jan, 2004  [EBook #5000]
+[Yes, we are more than one year ahead of schedule]
+[Most recently updated June 26, 2002]
+
+Edition: 10
+
+Language: English
+
+
+*** START OF THE PROJECT GUTENBERG EBOOK, THE NOTEBOOKS OF LEONARDO DA
+    VINCI, COMPLETE ***
+
+
+
+
+This eBook was produced by Charles Aldarondo and the Distributed
+Proofreaders team.
+
+
+
+The Notebooks of Leonardo Da Vinci
+
+Volume 1
+
+Translated by Jean Paul Richter
+
+1888
+
+
+
+
+
+
+PREFACE.
+
+
+
+
+
+A singular fatality has ruled the destiny of nearly all the most
+famous of Leonardo da Vinci's works. Two of the three most important
+were never completed, obstacles having arisen during his life-time,
+which obliged him to leave them unfinished; namely the Sforza
+Monument and the Wall-painting of the Battle of Anghiari, while the
+third--the picture of the Last Supper at Milan--has suffered
+irremediable injury from decay and the repeated restorations to
+which it was recklessly subjected during the XVIIth and XVIIIth
+centuries. Nevertheless, no other picture of the Renaissance has
+become so wellknown and popular through copies of every description.
+
+Vasari says, and rightly, in his Life of Leonardo, "that he laboured
+much more by his word than in fact or by deed", and the biographer
+evidently had in his mind the numerous works in Manuscript which
+have been preserved to this day. To us, now, it seems almost
+inexplicable that these valuable and interesting original texts
+should have remained so long unpublished, and indeed forgotten. It
+is certain that during the XVIth and XVIIth centuries their
+exceptional value was highly appreciated. This is proved not merely
+by the prices which they commanded, but also by the exceptional
+interest which has been attached to the change of ownership of
+merely a few pages of Manuscript.
+
+That, notwithstanding this eagerness to possess the Manuscripts,
+their contents remained a mystery, can only be accounted for by the
+many and great difficulties attending the task of deciphering them.
+The handwriting is so peculiar that it requires considerable
+practice to read even a few detached phrases, much more to solve
+with any certainty the numerous difficulties of alternative
+readings, and to master the sense as a connected whole. Vasari
+observes with reference to Leonardos writing: "he wrote backwards,
+in rude characters, and with the left hand, so that any one who is
+not practised in reading them, cannot understand them". The aid of a
+mirror in reading reversed handwriting appears to me available only
+for a first experimental reading. Speaking from my own experience,
+the persistent use of it is too fatiguing and inconvenient to be
+practically advisable, considering the enormous mass of Manuscripts
+to be deciphered. And as, after all, Leonardo's handwriting runs
+backwards just as all Oriental character runs backwards--that is
+to say from right to left--the difficulty of reading direct from the
+writing is not insuperable. This obvious peculiarity in the writing
+is not, however, by any means the only obstacle in the way of
+mastering the text. Leonardo made use of an orthography peculiar to
+himself; he had a fashion of amalgamating several short words into
+one long one, or, again, he would quite arbitrarily divide a long
+word into two separate halves; added to this there is no punctuation
+whatever to regulate the division and construction of the sentences,
+nor are there any accents--and the reader may imagine that such
+difficulties were almost sufficient to make the task seem a
+desperate one to a beginner. It is therefore not surprising that the
+good intentions of some of Leonardo s most reverent admirers should
+have failed.
+
+Leonardos literary labours in various departments both of Art and of
+Science were those essentially of an enquirer, hence the analytical
+method is that which he employs in arguing out his investigations
+and dissertations. The vast structure of his scientific theories is
+consequently built up of numerous separate researches, and it is
+much to be lamented that he should never have collated and arranged
+them. His love for detailed research--as it seems to me--was the
+reason that in almost all the Manuscripts, the different paragraphs
+appear to us to be in utter confusion; on one and the same page,
+observations on the most dissimilar subjects follow each other
+without any connection. A page, for instance, will begin with some
+principles of astronomy, or the motion of the earth; then come the
+laws of sound, and finally some precepts as to colour. Another page
+will begin with his investigations on the structure of the
+intestines, and end with philosophical remarks as to the relations
+of poetry to painting; and so forth.
+
+Leonardo himself lamented this confusion, and for that reason I do
+not think that the publication of the texts in the order in which
+they occur in the originals would at all fulfil his intentions. No
+reader could find his way through such a labyrinth; Leonardo himself
+could not have done it.
+
+Added to this, more than half of the five thousand manuscript pages
+which now remain to us, are written on loose leaves, and at present
+arranged in a manner which has no justification beyond the fancy of
+the collector who first brought them together to make volumes of
+more or less extent. Nay, even in the volumes, the pages of which
+were numbered by Leonardo himself, their order, so far as the
+connection of the texts was concerned, was obviously a matter of
+indifference to him. The only point he seems to have kept in view,
+when first writing down his notes, was that each observation should
+be complete to the end on the page on which it was begun. The
+exceptions to this rule are extremely few, and it is certainly
+noteworthy that we find in such cases, in bound volumes with his
+numbered pages, the written observations: "turn over", "This is the
+continuation of the previous page", and the like. Is not this
+sufficient to prove that it was only in quite exceptional cases that
+the writer intended the consecutive pages to remain connected, when
+he should, at last, carry out the often planned arrangement of his
+writings?
+
+What this final arrangement was to be, Leonardo has in most cases
+indicated with considerable completeness. In other cases this
+authoritative clue is wanting, but the difficulties arising from
+this are not insuperable; for, as the subject of the separate
+paragraphs is always distinct and well defined in itself, it is
+quite possible to construct a well-planned whole, out of the
+scattered materials of his scientific system, and I may venture to
+state that I have devoted especial care and thought to the due
+execution of this responsible task.
+
+The beginning of Leonardo's literary labours dates from about his
+thirty-seventh year, and he seems to have carried them on without
+any serious interruption till his death. Thus the Manuscripts that
+remain represent a period of about thirty years. Within this space
+of time his handwriting altered so little that it is impossible to
+judge from it of the date of any particular text. The exact dates,
+indeed, can only be assigned to certain note-books in which the year
+is incidentally indicated, and in which the order of the leaves has
+not been altered since Leonardo used them. The assistance these
+afford for a chronological arrangement of the Manuscripts is
+generally self evident. By this clue I have assigned to the original
+Manuscripts now scattered through England, Italy and France, the
+order of their production, as in many matters of detail it is highly
+important to be able to verify the time and place at which certain
+observations were made and registered. For this purpose the
+Bibliography of the Manuscripts given at the end of Vol. II, may be
+regarded as an Index, not far short of complete, of all Leonardo s
+literary works now extant. The consecutive numbers (from 1 to 1566)
+at the head of each passage in this work, indicate their logical
+sequence with reference to the subjects; while the letters and
+figures to the left of each paragraph refer to the original
+Manuscript and number of the page, on which that particular passage
+is to be found. Thus the reader, by referring to the List of
+Manuscripts at the beginning of Volume I, and to the Bibliography at
+the end of Volume II, can, in every instance, easily ascertain, not
+merely the period to which the passage belongs, but also exactly
+where it stood in the original document. Thus, too, by following the
+sequence of the numbers in the Bibliographical index, the reader may
+reconstruct the original order of the Manuscripts and recompose the
+various texts to be found on the original sheets--so much of it,
+that is to say, as by its subject-matter came within the scope of
+this work. It may, however, be here observed that Leonardo s
+Manuscripts contain, besides the passages here printed, a great
+number of notes and dissertations on Mechanics, Physics, and some
+other subjects, many of which could only be satisfactorily dealt
+with by specialists. I have given as complete a review of these
+writings as seemed necessary in the Bibliographical notes.
+
+In 1651, Raphael Trichet Dufresne, of Paris, published a selection
+from Leonardo's writings on painting, and this treatise became so
+popular that it has since been reprinted about two-and-twenty times,
+and in six different languages. But none of these editions were
+derived from the original texts, which were supposed to have been
+lost, but from early copies, in which Leonardo's text had been more
+or less mutilated, and which were all fragmentary. The oldest and on
+the whole the best copy of Leonardo's essays and precepts on
+Painting is in the Vatican Library; this has been twice printed,
+first by Manzi, in 1817, and secondly by Ludwig, in 1882. Still,
+this ancient copy, and the published editions of it, contain much
+for which it would be rash to hold Leonardo responsible, and some
+portions--such as the very important rules for the proportions of
+the human figure--are wholly wanting; on the other hand they contain
+passages which, if they are genuine, cannot now be verified from any
+original Manuscript extant. These copies, at any rate neither give
+us the original order of the texts, as written by Leonardo, nor do
+they afford any substitute, by connecting them on a rational scheme;
+indeed, in their chaotic confusion they are anything rather than
+satisfactory reading. The fault, no doubt, rests with the compiler
+of the Vatican copy, which would seem to be the source whence all
+the published and extensively known texts were derived; for, instead
+of arranging the passages himself, he was satisfied with recording a
+suggestion for a final arrangement of them into eight distinct
+parts, without attempting to carry out his scheme. Under the
+mistaken idea that this plan of distribution might be that, not of
+the compiler, but of Leonardo himself, the various editors, down to
+the present day, have very injudiciously continued to adopt this
+order--or rather disorder.
+
+I, like other enquirers, had given up the original Manuscript of the
+Trattato della Pittura for lost, till, in the beginning of 1880, I
+was enabled, by the liberality of Lord Ashburnham, to inspect his
+Manuscripts, and was so happy as to discover among them the original
+text of the best-known portion of the Trattato in his magnificent
+library at Ashburnham Place. Though this discovery was of a fragment
+only--but a considerable fragment--inciting me to further search,
+it gave the key to the mystery which had so long enveloped the first
+origin of all the known copies of the Trattato. The extensive
+researches I was subsequently enabled to prosecute, and the results
+of which are combined in this work, were only rendered possible by
+the unrestricted permission granted me to investigate all the
+Manuscripts by Leonardo dispersed throughout Europe, and to
+reproduce the highly important original sketches they contain, by
+the process of "photogravure". Her Majesty the Queen graciously
+accorded me special permission to copy for publication the
+Manuscripts at the Royal Library at Windsor. The Commission Centrale
+Administrative de l'Institut de France, Paris, gave me, in the most
+liberal manner, in answer to an application from Sir Frederic
+Leighton, P. R. A., Corresponding member of the Institut, free
+permission to work for several months in their private collection at
+deciphering the Manuscripts preserved there. The same favour which
+Lord Ashburnham had already granted me was extended to me by the
+Earl of Leicester, the Marchese Trivulsi, and the Curators of the
+Ambrosian Library at Milan, by the Conte Manzoni at Rome and by
+other private owners of Manuscripts of Leonardo's; as also by the
+Directors of the Louvre at Paris; the Accademia at Venice; the
+Uffizi at Florence; the Royal Library at Turin; and the British
+Museum, and the South Kensington Museum. I am also greatly indebted
+to the Librarians of these various collections for much assistance
+in my labours; and more particularly to Monsieur Louis Lalanne, of
+the Institut de France, the Abbate Ceriani, of the Ambrosian
+Library, Mr. Maude Thompson, Keeper of Manuscripts at the British
+Museum, Mr. Holmes, the Queens Librarian at Windsor, the Revd Vere
+Bayne, Librarian of Christ Church College at Oxford, and the Revd A.
+Napier, Librarian to the Earl of Leicester at Holkham Hall.
+
+In correcting the Italian text for the press, I have had the
+advantage of valuable advice from the Commendatore Giov. Morelli,
+Senatore del Regno, and from Signor Gustavo Frizzoni, of Milan. The
+translation, under many difficulties, of the Italian text into
+English, is mainly due to Mrs. R. C. Bell; while the rendering of
+several of the most puzzling and important passages, particularly in
+the second half of Vol. I, I owe to the indefatigable interest taken
+in this work by Mr. E. J. Poynter R. A. Finally I must express my
+thanks to Mr. Alfred Marks, of Long Ditton, who has most kindly
+assisted me throughout in the revision of the proof sheets.
+
+The notes and dissertations on the texts on Architecture in Vol. II
+I owe to my friend Baron Henri de Geymuller, of Paris.
+
+I may further mention with regard to the illustrations, that the
+negatives for the production of the "photo-gravures" by Monsieur
+Dujardin of Paris were all taken direct from the originals.
+
+It is scarcely necessary to add that most of the drawings here
+reproduced in facsimile have never been published before. As I am
+now, on the termination of a work of several years' duration, in a
+position to review the general tenour of Leonardos writings, I may
+perhaps be permitted to add a word as to my own estimate of the
+value of their contents. I have already shown that it is due to
+nothing but a fortuitous succession of unfortunate circumstances,
+that we should not, long since, have known Leonardo, not merely as a
+Painter, but as an Author, a Philosopher, and a Naturalist. There
+can be no doubt that in more than one department his principles and
+discoveries were infinitely more in accord with the teachings of
+modern science, than with the views of his contemporaries. For this
+reason his extraordinary gifts and merits are far more likely to be
+appreciated in our own time than they could have been during the
+preceding centuries. He has been unjustly accused of having
+squandered his powers, by beginning a variety of studies and then,
+having hardly begun, throwing them aside. The truth is that the
+labours of three centuries have hardly sufficed for the elucidation
+of some of the problems which occupied his mighty mind.
+
+Alexander von Humboldt has borne witness that "he was the first to
+start on the road towards the point where all the impressions of our
+senses converge in the idea of the Unity of Nature" Nay, yet more
+may be said. The very words which are inscribed on the monument of
+Alexander von Humboldt himself, at Berlin, are perhaps the most
+appropriate in which we can sum up our estimate of Leonardo's
+genius:
+
+"Majestati naturae par ingenium."
+
+LONDON, April 1883.
+
+F. P. R.
+
+
+
+
+
+
+
+CONTENTS OF VOLUME I.
+
+
+
+
+
+PROLEGOMENA AND GENERAL INTRODUCTION TO THE BOOK ON PAINTING
+
+Clavis Sigillorum and Index of Manuscripts.--The author's intention
+to publish his MSS. (1).--The preparation of the MSS. for
+publication (2).--Admonition to readers (3).--The disorder in the
+MSS. (4).--Suggestions for the arrangement of MSS. treating of
+particular subjects (5--8).--General introductions to the book on
+painting (9--13).--The plan of the book on painting (14--17).--The
+use of the book on painting (18).--Necessity of theoretical
+knowledge (19, 20).--The function of the eye (21--23).--Variability
+of the eye (24).--Focus of sight (25).--Differences of perception by
+one eye and by both eyes (26--29).--The comparative size of the
+image depends on the amount of light (30--39).
+
+II.
+
+LINEAR PERSPECTIVE
+
+General remarks on perspective (40--41).--The elements of
+perspective:--of the point (42--46).--Of the line (47--48).--The
+nature of the outline (49).--Definition of perspective (50).--The
+perception of the object depends on the direction of the eye
+(51).--Experimental proof of the existence of the pyramid of sight
+(52--55).--The relations of the distance point to the vanishing
+point (55--56).--How to measure the pyramid of vision (57).--The
+production of the pyramid of vision (58--64).--Proof by experiment
+(65--66).--General conclusions (67).--That the contrary is
+impossible (68).--A parallel case (69).--The function of the eye, as
+explained by the camera obscura (70--71).--The practice of
+perspective (72--73).--Refraction of the rays falling upon the eye
+(74--75).--The inversion of the images (76).--The intersection of
+the rays (77--82).--Demonstration of perspective by means of a
+vertical glass plane (83--85.)--The angle of sight varies with the
+distance (86--88).--Opposite pyramids in juxtaposition (89).--On
+simple and complex perspective (90).--The proper distance of objects
+from the eye (91--92).--The relative size of objects with regard to
+their distance from the eye (93--98).--The apparent size of objects
+denned by calculation (99--106).--On natural perspective (107--109).
+
+III.
+
+SIX BOOKS ON LIGHT AND SHADE
+
+GENERAL INTRODUCTION.--Prolegomena (110).--Scheme of the books on
+light and shade (111).--Different principles and plans of treatment
+(112--116).--Different sorts of light (117--118).--Definition of
+the nature of shadows (119--122).--Of the various kinds of shadows
+(123--125).--Of the various kinds of light (126--127).--General
+remarks (128--129).--FIRST BOOK ON LIGHT AND SHADE.--On the nature
+of light (130--131).--The difference between light and lustre
+(132--135).--The relations of luminous to illuminated bodies (136).
+--Experiments on the relation of light and shadow within a room
+(137--140).--Light and shadow with regard to the position of the
+eye (141--145).--The law of the incidence of light
+(146--147).--SECOND BOOK ON LIGHT AND SHADE.--Gradations of strength
+in the shadows (148--149).--On the intensity of shadows as dependent
+on the distance from the light (150--152).--On the proportion of
+light and shadow (153--157).--THIRD BOOK ON LIGHT AND
+SHADE.--Definition of derived shadow (158--159).--Different sorts of
+derived shadows (160--162).--On the relation of derived and primary
+shadow (163--165).--On the shape of derived shadows (166--174).--On
+the relative intensity of derived shadows (175--179).--Shadow as
+produced by two lights of different size (180--181).--The effect of
+light at different distances (182).--Further complications in the
+derived shadows (183--187).--FOURTH BOOK ON LIGHT AND SHADE.--On the
+shape of cast shadows (188--191).--On the outlines of cast shadows
+(192--195).--On the relative size of cast shadows (196.
+197).--Effects on cast shadows by the tone of the back ground
+(198).--A disputed proposition (199).--On the relative depth of
+cast shadows (200--202).--FIFTH BOOK ON LIGHT AND
+SHADE.--Principles of reflection (203. 204).--On reverberation
+(205).--Reflection on water (206. 207).--Experiments with the mirror
+(208--210).--Appendix:--On shadows in movement (211--212).--SIXTH
+BOOK ON LIGHT AND SHADE.--The effect of rays passing through holes
+(213. 214).--On gradation of shadows (215. 216).--On relative
+proportion of light and shadows (216--221).
+
+IV.
+
+PERSPECTIVE OF DISAPPEARANCE
+
+Definition (222. 223).--An illustration by experiment (224).--A
+guiding rule (225).---An experiment (226).--On indistinctness at
+short distances (227--231).--On indistinctness at great distances
+(232--234).--The importance of light and shade in the Prospettiva
+de' perdimenti (235--239).--The effect of light or dark backgrounds
+on the apparent size of objects (240--250).--Propositions on
+Prospettiva de' perdimenti from MS. C. (250--262).
+
+V.
+
+THEORY OF COLOURS
+
+The reciprocal effects of colours on objects placed opposite each
+other (263--271).--Combination of different colours in cast shadows
+(272).--The effect of colours in the camera obscura (273. 274).--On
+the colours of derived shadows (275. 276).--On the nature of colours
+(277. 278).--On gradations in the depth of colours (279. 280).--On
+the reflection of colours (281--283).--On the use of dark and light
+colours in painting (284--286).--On the colours of the rainbow
+(287--288).
+
+VI.
+
+PERSPECTIVE OF COLOUR AND AERIAL PERSPECTIVE
+
+General rules (289--291).--An exceptional case (292).--An experiment
+(293).--The practice of the Prospettiva de' colori (294).--The rules
+of aerial perspective (295--297).--On the relative density of the
+atmosphere (298--299).--On the colour of the atmosphere (300--307).
+
+VII.
+
+ON THE PROPORTIONS AND ON THE MOVEMENTS OF THE HUMAN FIGURE
+
+Preliminary observations (308. 309).--Proportions of the head and
+face (310--318).--Proportions of the head seen in front
+(319--321).--Proportions of the foot (322--323).--Relative
+proportions of the hand and foot (324).--Relative proportions of
+the foot and of the face (325--327).--Proportions of the leg
+(328--331).--On the central point of the whole body (332).--The
+relative proportions of the torso and of the whole figure
+(333).--The relative proportions of the head and of the torso
+(334).--The relative proportions of the torso and of the leg (335.
+336).--The relative proportions of the torso and of the foot
+(337).--The proportions of the whole figure (338--341).--The torso
+from the front and back (342).--Vitruvius' scheme of proportions
+(343).--The arm and head (344).--Proportions of the arm
+(345--349).--The movement of the arm (350--354).--The movement of
+the torso (355--361).--The proportions vary at different ages
+(362--367).--The movement of the human figure (368--375).--Of
+walking up and down (375--379).--On the human body in action
+(380--388).--On hair falling down in curls (389).--On draperies
+
+(390--392).
+
+VIII.
+
+BOTANY FOR PAINTERS, AND ELEMENTS OF LANDSCAPE PAINTING
+
+Classification of trees (393).--The relative thickness of the
+branches to the trunk (394--396).--The law of proportion in the
+

@@ -11,9 +11,11 @@ class arr //κλάση αταξινόμητου
 	public:
 		arr();
 
+		//αυτά θα φύγουν στην τελική έκδοση
 		char* getB(int i){return b[i].w;};
 		int getT(int i){return b[i].t;};
 		int getC(){return c;};
+		//τέλος
 		
 		virtual void insert(char*s);
 		virtual int find(char* s);

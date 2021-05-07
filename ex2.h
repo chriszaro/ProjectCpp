@@ -3,7 +3,7 @@
 #include <cstring>
 struct word //λέξη και επαναλήψεις της
 {
-	char* w =new char;
+	char *w=new char[20];
 	int t=0;
 };
 #endif
