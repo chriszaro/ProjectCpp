@@ -1,25 +1,20 @@
 #include <iostream>
 #include "ex.h"
-#include <cstring> //Για μέγεθος συμβολοσειρών, σύγκριση κτλ
+#include <string> //Για μέγεθος συμβολοσειρών, σύγκριση κτλ
 #include <fstream> //file stream, για να διαβάζεις αρχεία
 using namespace std;
 
-#include "arr.h" // δεν έχω δοκιμάσει αν δουλεύει το delete
-#include "sarr.h" //ούτε εδώ
-
-//#include "bintree.h"
-//#include "bintreeavl.h"
-//#include "hash.h"
+#include "sarr.h" //εισάγει την κλάση των 2 πινάκων //ΔΕΝ ΕΧΩ ΔΟΚΙΜΑΣΕΙ ΑΝ ΔΟΥΛΕΥΕΙ Η ΔΙΑΓΡΑΦΗ
 
 int main()
 {
 	arr a;
 	sarr b;
-  char *s=new char;
+  string s;
 
-  ifstream File; //Το File είναι η μεταβλητή που έχει το αρχείο.
+	ifstream File; //Το File είναι η μεταβλητή που έχει το αρχείο.
 
-  File.open("test.txt"); //Ανοίγει το αρχείο
+  File.open("small-file.txt"); //Ανοίγει το αρχείο
 
   if (!File) //Ελέγχεις ότι υπάρχει το αρχείο και κατάφερε να το ανοίξει
   {
@@ -29,14 +24,14 @@ int main()
 	{
 		while (File >> s) //Διαβάζεις από το αρχείο, λέξη λέξη
 		{
-			s=removeNonLatin(s); //την καθαρίζεις από σκουπίδια
+			s=clear(s); //την καθαρίζεις από σκουπίδια
 
-			if (strcmp(s,"\0")) //αποκλείεις συμβολοσειρές αριθμών και συμβόλων
+			if (!s.empty()) //αποκλείεις συμβολοσειρές αριθμών και συμβόλων
 			{
 				int fa = a.find(s); //αναζήτηση σε αταξηνόμητο
-				int fb = b.find(s); //αναζήτηση σε ταξηνομηνένο
 				if (fa==-1)
 					a.insert(s);
+				int fb=b.find(s);
 				if (fb!=-1)
 					b.insert(s,fb);
 			}
@@ -47,7 +42,7 @@ int main()
 		ofstream oa, ob;
 		oa.open("oa.txt");
 		ob.open("ob.txt");
-		if (oa.is_open() && ob.is_open())
+		if (oa.is_open() && ob.is_open() )
 		{
 			for (int i=0; i<a.getC(); i++)
 				oa<<a.getB(i)<<endl<<a.getT(i)<<endl<<endl;
@@ -55,7 +50,6 @@ int main()
 				ob<<b.getB(i)<<endl<<b.getT(i)<<endl<<endl;
 		}
 		oa.close();
-		ob.close();
 	}
 }
   
