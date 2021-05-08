@@ -6,8 +6,8 @@ class sarr : public arr
 {
   public:
 		sarr():arr(){}; //μπορεί και να μην χρειάζεται
-		void insert(char*s, int);
-		int find(char* s);
-		int binarySearch(word *b, char* s, int low, int high);
+		void insert(string, int);
+		int find(string);
+		int binarySearch(word *b, string s, int low, int high);
 };
 #endif
