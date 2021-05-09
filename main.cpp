@@ -19,6 +19,7 @@ int main()
   if (!File) //Ελέγχεις ότι υπάρχει το αρχείο και κατάφερε να το ανοίξει
   {
     cerr << "Unable to open file";
+		return 1;
   }
 	else
 	{
