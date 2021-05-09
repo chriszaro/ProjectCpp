@@ -48,6 +48,7 @@ int arr::find(string &s) //αναζήτηση, δέχεται μία συμβο�
 void arr::del(string &s)
 {
     int k=find(s);
-    b[k]=b[c-1];
+    b[k].w=b[c-1].w;
+    b[k].t=b[c-1].t;
     c--;
 }
