@@ -12,7 +12,7 @@ class arr //κλάση αταξινόμητου
 	public:
 		arr()
 		{
-			size=0;
+			size=15000;
 			b=new word[size];
 			c=0;
 		}
@@ -27,8 +27,8 @@ class arr //κλάση αταξινόμητου
 		int getC(){return c;};
 		//τέλος
 		
-		virtual void insert(string);
-		virtual int find(string);
-		void del(string);
+		virtual void insert(string&);
+		virtual int find(string&);
+		virtual void del(string&);
 };
 #endif
