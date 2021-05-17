@@ -6,6 +6,10 @@ void sarr::insert(string &s, int p) //εισαγωγή νέας λέξης
 	if (c==size) //οι αυξήσεις που θα κάνουμε στον πίνακα θα είναι x2 θέσεις
 	{
 		word *temp= new word[2*size]; //ορίζουμε μεγαλύτερο πίνακα
+		if(!temp)
+		{
+			cerr<<"!!!Memory Error!!!"<<endl;
+		}
 		for (int i=0; i<size; i++)
 		{	
 			temp[i].w=b[i].w;

@@ -1,7 +1,9 @@
 //Υλοποίηση 1) αταξινόμητος πίνακας
 #ifndef arr_h
 #define arr_h
-#include "ex2.h"
+#include "struct.h"
+#include <iostream>
+using namespace std;
 
 class arr //κλάση αταξινόμητου
 {

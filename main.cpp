@@ -1,12 +1,80 @@
 #include <iostream>
-#include "ex.h"
-#include <string> //Για μέγεθος συμβολοσειρών, σύγκριση κτλ
 #include <fstream> //file stream, για να διαβάζεις αρχεία
 using namespace std;
 
+#include "clear.h"
 #include "sarr.h" //εισάγει την κλάση των 2 πινάκων //ΔΕΝ ΕΧΩ ΔΟΚΙΜΑΣΕΙ ΑΝ ΔΟΥΛΕΥΕΙ Η ΔΙΑΓΡΑΦΗ
+#include "avl.h"
 
 int main()
+{
+	BST d, *root = nullptr;
+	AVL e, *avlroot=nullptr;
+	string s;
+
+	ifstream File; //Το File είναι η μεταβλητή που έχει το αρχείο.
+
+  File.open("small-file.txt"); //Ανοίγει το αρχείο
+
+  if (!File) //Ελέγχεις ότι υπάρχει το αρχείο και κατάφερε να το ανοίξει
+  {
+    cerr << "Unable to open file";
+		return 1;
+  }
+	else
+	{
+		File >> s;
+		s=clear(s);
+		while(s.empty())
+		{
+			File >> s;
+			s=clear(s);
+		}
+		root=d.Insert(root, s);
+		avlroot=e.Insert(avlroot, s);
+		
+		while (File >> s) //Διαβάζεις από το αρχείο, λέξη λέξη
+		{
+			s=clear(s); //την καθαρίζεις από σκουπίδια (αφήνει μόνο τα γράμματα)
+
+			if (!s.empty()) //αποκλείεις συμβολοσειρές αριθμών και συμβόλων
+			{
+				if (!d.search(root, s))
+					d.Insert(root, s);
+				if (!e.search(avlroot, s))	
+					avlroot=e.Insert(avlroot, s);
+			}
+		}
+
+		File.close(); //Κλείνεις το αρχείο
+	}
+
+	ofstream a, b, c, f, g, h;
+	a.open("preorder.txt");
+	b.open("inorder.txt");
+	c.open("postorder.txt");
+	f.open("preorder1.txt");
+	g.open("inorder1.txt");
+	h.open("postorder1.txt");
+	if (a.is_open() && b.is_open() && b.is_open())
+	{
+		d.Preorder(root, a);
+		d.Inorder(root, b);
+		d.Postorder(root, c);
+		e.Preorder(avlroot, f);
+		e.Inorder(avlroot, g);
+		e.Postorder(avlroot, h);
+
+	}
+	a.close();
+	b.close();
+	c.close();
+	f.close();
+	g.close();
+	h.close();
+}
+
+/*int main()
 {
 	arr a;
 	sarr b;
@@ -46,10 +114,10 @@ int main()
 		if (oa.is_open() && ob.is_open() )
 		{
 			for (int i=0; i<a.getC(); i++)
-				oa<<a.getB(i)<<endl<<a.getT(i)<<endl<<endl;
+				oa<<a.getB(i)<<" "<<a.getT(i)<<endl;
 			for (int i=0; i<b.getC(); i++)
-				ob<<b.getB(i)<<endl<<b.getT(i)<<endl<<endl;
+				ob<<b.getB(i)<<" "<<b.getT(i)<<endl;
 		}
 		oa.close();
 	}
-}
+}*/

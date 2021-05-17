@@ -1,9 +1,7 @@
-#ifndef ex2_h
-#define ex2_h
+#ifndef struct_h
+#define struct_h
 
-#include <iostream>
 #include <string>
-
 using namespace std;
 
 struct word //λέξη και επαναλήψεις της

@@ -1,7 +1,5 @@
 //Υλοποίηση 1) αταξινόμητος πίνακας
 #include "arr.h"
-#include <iostream>
-using namespace std;
 
 void arr::insert(string &s) //εισαγωγή νέας λέξης
 {
@@ -9,7 +7,7 @@ void arr::insert(string &s) //εισαγωγή νέας λέξης
 	{
 		word *temp= new word[2*size]; //ορίζουμε μεγαλύτερο πίνακα
 
-		if(temp==nullptr)
+		if(!temp)
 		{
 			cerr<<"!!!Memory Error!!!"<<endl;
 		}

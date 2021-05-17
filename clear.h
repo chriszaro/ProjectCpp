@@ -1,9 +1,7 @@
-#ifndef ex_h
-#define ex_h
+#ifndef clear_h
+#define clear_h
 
-#include <iostream>
 #include <string>
-
 using namespace std;
   
 string clear(string s)
@@ -17,8 +15,8 @@ string clear(string s)
 		}
 		else if (s[i] >= 'A' && s[i] <= 'Z')
 		{
-            s[i]=s[i]+32;
-        }
+      s[i]=s[i]+32;
+    }
 	}
 	return s;
 }
