@@ -49,10 +49,13 @@ int sarr::binarySearch(word *b, string &s, int low, int high)//βρίσκει τ
 	return binarySearch(b, s, low,	mid - 1);
 }
 
-int sarr::find(string &s) //αναζήτηση, δέχεται μία συμβολοσειρά για όρισμα
+bool sarr::find(string &s, int pos) //αναζήτηση, δέχεται μία συμβολοσειρά για όρισμα
 {
 	if (c==0)
-		return 0;
+	{
+		pos=0;
+		return false;
+	}
 	int start=0; //αρχή του πίνακα που θα ψάξουμε
 	int end=c-1; //"τέλος" του πίνακα
 	int m;
@@ -62,7 +65,8 @@ int sarr::find(string &s) //αναζήτηση, δέχεται μία συμβο
 		if (b[m].w.compare(s)==0) //αν την βρει στο μεσαίο
 		{													
 			b[m].t++;	//αυξάνει τις επαναλήψεις της λέξης
-			return -1; //επιστρέφει -1 όταν την βρίσκει
+			pos=m;
+			return true;
 		}
 		else if (s.compare(b[m].w)>0) //αν η λέξη είναι μεγαλύτερη από την μεσαία, τότε θα ψάξουμε από την μέση του πίνακα προς το τέλος
 		{
@@ -74,12 +78,14 @@ int sarr::find(string &s) //αναζήτηση, δέχεται μία συμβο
 		}
 	}
 	
-	return binarySearch(b,s,0,c-1); //βρίσκει την θέση που πρέπει να μπει το στοιχείο
+	pos=binarySearch(b,s,0,c-1); //βρίσκει την θέση που πρέπει να μπει το στοιχείο
+	return false;
 };
 
 void sarr::del(string &s) //διαγραφή καταχώρησης υπάρχουσας λέξης
 {
-	int k= find(s); //αναζήτηση για να βρούμε σε ποια θέση είναι η λέξη
+	int k;
+	find(s, k); //αναζήτηση για να βρούμε σε ποια θέση είναι η λέξη
 
 	for (int i=k; i<c-1; i++) //ξεκινάμε το i από αυτήν την θέση
 	{

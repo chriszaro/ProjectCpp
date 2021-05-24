@@ -18,10 +18,15 @@ class AVL : protected BST
 		AVL* rightRotate(AVL*);
 		AVL* leftRotate(AVL*);
 
-    bool search(AVL*, string);
+    bool search(AVL*, string, AVL*);
 		AVL* Insert(AVL*, string); //εισαγωγή
 		AVL* Delete(AVL*, string);
 		AVL* minValue(AVL*);
+
+		int getT(AVL* pos)
+		{
+			return pos->t;
+		}
 
     void Inorder(AVL*, ofstream&);
 		void Postorder(AVL*, ofstream&);

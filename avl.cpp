@@ -119,7 +119,7 @@ AVL* AVL::Insert(AVL* node, string key)
 	return node;
 }
 
-bool AVL::search(AVL* root, string key)
+bool AVL::search(AVL* root, string key, AVL* pos)
 {
 	if (!root) //αν δεν το βρήκε
 		return false;
@@ -127,13 +127,14 @@ bool AVL::search(AVL* root, string key)
 	if (key.compare(root->w)==0) //αν το στοιχείο είναι στην ρίζα που ελέγχεται τώρα
 	{
 		root->t++;
+		pos=root;
 		return true;
 	}
 
 	if (key.compare(root->w)>0) //αν το στοιχείο είναι μεγαλύτερο από της ρίζας
-		return search(root->right, key);
+		return search(root->right, key, pos);
 
-	return search(root->left, key); //αν το στοιχείο είναι μεγαλύτερο από της ρίζας
+	return search(root->left, key, pos); //αν το στοιχείο είναι μεγαλύτερο από της ρίζας
 }
 
 void AVL::Inorder(AVL* root, ofstream &a) //ενδοδιατεταγμένη διάσχιση

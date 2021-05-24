@@ -1,0 +1,113 @@
+#include <iostream>
+#include <fstream> //file stream, για να διαβάζεις αρχεία
+#include <chrono>  // for high_resolution_clock
+using namespace std;
+
+#include "clear.h" //
+#include "sarr.h" //εισάγει την κλάση των 2 πινάκων //ΔΕΝ ΕΧΩ ΔΟΚΙΜΑΣΕΙ ΑΝ ΔΟΥΛΕΥΕΙ Η ΔΙΑΓΡΑΦΗ
+#include "avl.h" //εισάγει τα δύο δυαδικά δένδρα
+
+const int Q_SIZE=1000;
+int main()
+{
+	string Q[Q_SIZE];
+	arr arrayF;
+	sarr sortedArray;
+	BST bintree, *root = nullptr;
+	AVL avltree, *avlroot=nullptr;
+	string s;
+
+	ifstream File; //Το File είναι η μεταβλητή που έχει το αρχείο.
+
+  File.open("small-file.txt"); //Ανοίγει το αρχείο
+
+  if (!File) //Ελέγχεις ότι υπάρχει το αρχείο και κατάφερε να το ανοίξει
+  {
+    cerr << "Unable to open file";
+		return 1;
+  }
+
+	do
+	{
+		File >> s;
+		s=clear(s);
+	}
+	while (s.empty());
+
+	arrayF.insert(s);
+	sortedArray.insert(s,0);
+	root=bintree.Insert(root, s);
+	avlroot=avltree.Insert(avlroot, s);
+	
+	int fa,fb;
+	BST* pos;
+	AVL* pos2;
+	while (File >> s) //Διαβάζεις από το αρχείο, λέξη λέξη
+	{
+		s=clear(s); //την καθαρίζεις από σκουπίδια (αφήνει μόνο τα γράμματα)
+
+		if (!s.empty()) //αποκλείεις συμβολοσειρές αριθμών και συμβόλων
+		{
+			fa = arrayF.find(s); //αναζήτηση σε αταξηνόμητο
+			if (fa==-1)
+				arrayF.insert(s);
+			if (!sortedArray.find(s,fb))
+				sortedArray.insert(s,fb);
+			if (!bintree.search(root, s, pos))
+				bintree.Insert(root, s);
+			if (!avltree.search(avlroot, s, pos2))	
+				avlroot=avltree.Insert(avlroot, s);
+		}
+	}
+
+	File.close(); //Κλείνεις το αρχείο
+
+	ofstream out;
+	out.open("output.txt");
+
+	out<<"1) Unsorted Array:"<<endl;
+	auto start = chrono::high_resolution_clock::now();
+	for (int i=0;i<Q_SIZE;i++)
+	{
+		fa = arrayF.find(Q[i]);
+		out<<Q[i]<<" "<<arrayF.getT(fa)<<endl;
+	}
+	auto finish = chrono::high_resolution_clock::now();
+	chrono::duration<double> elapsed = finish - start;
+	out<<"Elapsed time: "<<elapsed.count()<<"s"<<endl;
+
+	out<<"2) Sorted Array:"<<endl;
+	start = chrono::high_resolution_clock::now();
+	for (int i=0;i<Q_SIZE;i++)
+	{
+		sortedArray.find(Q[i],fb);
+		out<<Q[i]<<" "<<sortedArray.getT(fb)<<endl;
+	}
+	finish = chrono::high_resolution_clock::now();
+	elapsed = finish - start;
+	out<<"Elapsed time: "<<elapsed.count()<<"s"<<endl;
+
+	out<<"3) Binary Search Tree:"<<endl;
+	start = chrono::high_resolution_clock::now();
+	for (int i=0;i<Q_SIZE;i++)
+	{
+		bintree.search(root, s, pos);
+		out<<Q[i]<<" "<<bintree.getT(pos)<<endl;
+	}
+	finish = chrono::high_resolution_clock::now();
+	elapsed = finish - start;
+	out<<"Elapsed time: "<<elapsed.count()<<"s"<<endl;
+
+	out<<"4) AVL Binary Search Tree:"<<endl;
+	start = chrono::high_resolution_clock::now();
+	for (int i=0;i<Q_SIZE;i++)
+	{
+		avltree.search(avlroot, s, pos2);
+		out<<Q[i]<<" "<<bintree.getT(pos)<<endl;
+	}
+	finish = chrono::high_resolution_clock::now();
+	elapsed = finish - start;
+	out<<"Elapsed time: "<<elapsed.count()<<"s"<<endl;
+
+	out.close();
+}

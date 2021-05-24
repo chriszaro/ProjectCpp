@@ -17,9 +17,14 @@ class BST //BinarySearchTree, Δυαδικό Δένδρο Αναζήτησης
     BST();
     BST(string);
 
-    bool search(BST*, string);
+    bool search(BST*, string, BST*);
 		BST* Insert(BST*, string); //εισαγωγή
 		BST* Delete(BST*, string);
+		
+		virtual int getT(BST* pos)
+		{
+			return pos->t;
+		}
 
     void Inorder(BST*, ofstream&);
 		void Postorder(BST*, ofstream&);

@@ -8,8 +8,8 @@ using namespace std;
 
 int main()
 {
-	BST d, *root = nullptr;
-	AVL e, *avlroot=nullptr;
+	BST d, *root = nullptr, *pos;
+	AVL e, *avlroot=nullptr, *pos2;
 	string s;
 
 	ifstream File; //Το File είναι η μεταβλητή που έχει το αρχείο.
@@ -23,13 +23,13 @@ int main()
   }
 	else
 	{
-		File >> s;
-		s=clear(s);
-		while(s.empty())
+		do
 		{
 			File >> s;
 			s=clear(s);
 		}
+		while(s.empty());
+
 		root=d.Insert(root, s);
 		avlroot=e.Insert(avlroot, s);
 		
@@ -39,9 +39,9 @@ int main()
 
 			if (!s.empty()) //αποκλείεις συμβολοσειρές αριθμών και συμβόλων
 			{
-				if (!d.search(root, s))
+				if (!d.search(root, s, pos))
 					d.Insert(root, s);
-				if (!e.search(avlroot, s))	
+				if (!e.search(avlroot, s, pos2))	
 					avlroot=e.Insert(avlroot, s);
 			}
 		}
@@ -56,7 +56,7 @@ int main()
 	f.open("preorder1.txt");
 	g.open("inorder1.txt");
 	h.open("postorder1.txt");
-	if (a.is_open() && b.is_open() && b.is_open())
+	if (a.is_open() && b.is_open() && c.is_open() && f.is_open() && g.is_open() && h.is_open())
 	{
 		d.Preorder(root, a);
 		d.Inorder(root, b);
