@@ -100,8 +100,8 @@ int main()
 				int fa = a.find(s); //αναζήτηση σε αταξηνόμητο
 				if (fa==-1)
 					a.insert(s);
-				int fb=b.find(s);
-				if (fb!=-1)
+				int fb;
+				if (!b.find(s,fb))
 					b.insert(s,fb);
 			}
 		}

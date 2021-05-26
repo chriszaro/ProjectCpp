@@ -21,6 +21,8 @@ int main()
 
   File.open("small-file.txt"); //Ανοίγει το αρχείο
 
+	int counter=0;
+
   if (!File) //Ελέγχεις ότι υπάρχει το αρχείο και κατάφερε να το ανοίξει
   {
     cerr << "Unable to open file";
@@ -34,6 +36,8 @@ int main()
 	}
 	while (s.empty());
 
+	Q[counter]=s;
+	counter++;
 	arrayF.insert(s);
 	sortedArray.insert(s,0);
 	root=bintree.Insert(root, s);
@@ -48,6 +52,11 @@ int main()
 
 		if (!s.empty()) //αποκλείεις συμβολοσειρές αριθμών και συμβόλων
 		{
+			if (counter<Q_SIZE)
+			{
+				Q[counter]=s;
+				counter++;
+			}
 			fa = arrayF.find(s); //αναζήτηση σε αταξηνόμητο
 			if (fa==-1)
 				arrayF.insert(s);
@@ -91,7 +100,7 @@ int main()
 	start = chrono::high_resolution_clock::now();
 	for (int i=0;i<Q_SIZE;i++)
 	{
-		bintree.search(root, s, pos);
+		bintree.search(root, Q[i], pos);
 		out<<Q[i]<<" "<<bintree.getT(pos)<<endl;
 	}
 	finish = chrono::high_resolution_clock::now();
@@ -102,8 +111,8 @@ int main()
 	start = chrono::high_resolution_clock::now();
 	for (int i=0;i<Q_SIZE;i++)
 	{
-		avltree.search(avlroot, s, pos2);
-		out<<Q[i]<<" "<<bintree.getT(pos)<<endl;
+		avltree.search(avlroot, Q[i], pos2);
+		out<<Q[i]<<" "<<avltree.getT(pos2)<<endl;
 	}
 	finish = chrono::high_resolution_clock::now();
 	elapsed = finish - start;
